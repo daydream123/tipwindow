@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="end|bottom"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/topLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1234567890" />
+        android:textSize="20sp"
+        android:text="this is top left" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/topRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:text="this is top right" />
+
+    <TextView
+        android:id="@+id/bottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:text="this is bottom left" />
+
+    <TextView
+        android:id="@+id/bottomRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:text="this is bottom right" />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="this is top left" />
+
+</RelativeLayout>

@@ -13,12 +13,39 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final TextView textView = findViewById(R.id.textView);
         final TipWindow tipWindow = new TipWindow(this);
-        textView.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.topLeft).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tipWindow.show(textView, "hello my world");
+                tipWindow.show(findViewById(R.id.topLeft), "hello my world");
+            }
+        });
+
+        findViewById(R.id.topRight).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipWindow.show(findViewById(R.id.topRight), "hello my world");
+            }
+        });
+
+        findViewById(R.id.bottomLeft).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipWindow.show(findViewById(R.id.bottomLeft), "hello my world");
+            }
+        });
+
+        findViewById(R.id.bottomRight).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipWindow.show(findViewById(R.id.bottomRight), "hello my world");
+            }
+        });
+
+        findViewById(R.id.center).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipWindow.show(findViewById(R.id.center), "hello my world");
             }
         });
     }
